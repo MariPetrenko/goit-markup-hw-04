@@ -1,12 +1,13 @@
 :root {
   --primery-text-color: #757575;
+  
   --titel-text-color: #212121;
   --accent-text-color: #2196f3;
   --heder-logo-color: #000000;
-
+  --icon-color:#AFB1B8;
   --main-background-color: #ffffff;
   --section-fond-color: #2f303a;
-
+  --border-portfolio: #eeeeee;
   --text-color-logo-adres-btn: #ffffff;
 
   --filter-btn-tim-fon: #f5f4fa;
@@ -225,14 +226,23 @@ img {
   width: 1200px;
   margin: auto;
 }
+.features-list-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--filter-btn-tim-fon);
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
 
 .features-icon{
-  justify-content: center;
-  align-items: center;
   
-  margin-bottom: 30px;
-  width: 120px;
-  height: 270;
+  margin: 0px;
+  width: 70px;
+  height: 70px;
 }
 
 .titel {
@@ -350,15 +360,18 @@ img {
   display: flex; 
   justify-content: center;
   align-items: center;
+  
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: #AFB1B8;
+  fill: var(--icon-color);
 }
 
 .socials-link:hover{
   fill: var(--text-color-logo-adres-btn);
+  background: var(--accent-text-color);
 }
+
 
 /*Постоянные клиенты*/
 
@@ -369,13 +382,40 @@ font-size: 36px;
   line-height: 1.16;
  color: var(--titel-text-color);
 }
-
 .clients-list{
   display: flex;
- 
+}
+.clients-cards{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  margin-right: 30px;
+  margin-bottom: 95px;
+  
 }
 
-.clients-cards
+.clients-cards:last-child{
+  margin-right: 0px;
+}
+.clients-cards:hover
+.clients-cards:focus{
+  fill: var(--accent-text-color);
+}
+
+.clients-link-logo {
+  display: flex;
+}
+.clients-logo{
+width: 106px;
+height: 60px;
+fill: var(--icon-color);
+}
+
+
 /*Подвал */
 
 .footer {
@@ -400,7 +440,7 @@ font-size: 36px;
 }
 
 .footer {
-  background-color: var(--section-fond-color);
+   background-color: var(--section-fond-color);
 }
 
 .footer-contact-list {
@@ -423,6 +463,47 @@ font-size: 36px;
   color: var(--accent-text-color);
 }
 
+/*Социальные сети футер*/
+.footer.container{
+  
+}
+.footer-social-list{
+  display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-linc-list{
+
+}
+.footer-socials{
+display: flex;
+
+}
+.footer-titel-link{
+  color: var(--text-color-logo-adres-btn);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-linc-icon{
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #44454E;
+}
+.footer-linc-icon:hover{
+background-color: var(--accent-text-color);
+}
+
+.footer-icon{
+  fill: var(--text-color-logo-adres-btn);
+  width: 20px;
+  height: 20px;
+}
 /*Портфолио*/
 
 /*Кнопки фильтра*/
@@ -480,9 +561,9 @@ font-size: 36px;
   margin-bottom: 0;
 }
 .portfolio-card {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid var(--border-portfolio);
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
   padding: 20px 24px;
 }
 
