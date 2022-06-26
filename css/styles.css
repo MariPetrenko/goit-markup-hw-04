@@ -226,6 +226,15 @@ img {
   margin: auto;
 }
 
+.features-icon{
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 30px;
+  width: 120px;
+  height: 270;
+}
+
 .titel {
   margin-bottom: 10px;
   color: var(--titel-text-color);
@@ -322,21 +331,51 @@ img {
 }
 
 .team-position {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.18;
 }
-
+/* Иконки соц.сетей*/
 .socials{
   display: flex;
+  justify-content: center;
   gap: 10px;
+  margin: 16px 30px 30px 30px;
+  
 }
 
-.socials-list{
 
+.socials-link {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: #AFB1B8;
 }
 
+.socials-link:hover{
+  fill: var(--text-color-logo-adres-btn);
+}
+
+/*Постоянные клиенты*/
+
+.clients-titel{
+ margin-bottom: 50px;
+ text-align: center;
+font-size: 36px;
+  line-height: 1.16;
+ color: var(--titel-text-color);
+}
+
+.clients-list{
+  display: flex;
+ 
+}
+
+.clients-cards
 /*Подвал */
 
 .footer {
