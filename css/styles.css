@@ -9,10 +9,10 @@
   --section-fond-color: #2f303a;
   --border-portfolio: #eeeeee;
   --text-color-logo-adres-btn: #ffffff;
-
+  --text-footer: #8C8D92;
   --filter-btn-tim-fon: #f5f4fa;
   --logo-btn-hover: #188ce8;
-
+  --footer-icon: #44454E;
   --portfolio-section-gap: 30px;
 }
 
@@ -83,7 +83,6 @@ img {
 
 .header-logo {
   margin-right: 93px;
-
   font-family: Raleway;
   color: var(--heder-logo-color);
   font-size: 26px;
@@ -117,7 +116,7 @@ img {
 
   font-weight: 500;
   text-decoration: none;
-  cursor: default;
+
   line-height: 1.14;
 }
 .header-nav:hover,
@@ -135,7 +134,6 @@ img {
   margin-left: auto;
   display: flex;
   align-items: center
-  
 }
 .main-nav-list {
   display: flex;
@@ -149,8 +147,9 @@ img {
 }
 
 .header-contact {
+  display: flex;
+  align-items: center;
   color: var(--primery-text-color);
-  font-weight: 500;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -365,7 +364,8 @@ img {
   fill: var(--icon-color);
 }
 
-.socials-link:hover{
+.socials-link:hover,
+.socials-link:focus{
   fill: var(--text-color-logo-adres-btn);
   background: var(--accent-text-color);
 }
@@ -374,23 +374,17 @@ img {
 /*Постоянные клиенты*/
 
 .clients-titel{
-  margin-top: 94px;
  margin-bottom: 50px;
  text-align: center;
-font-size: 36px;
-  line-height: 1.16;
+ font-size: 36px;
+ line-height: 1.16;
  color: var(--titel-text-color);
 }
 .clients-list{
   display: flex;
+  gap: 30px;
 }
-.clients-cards{
-  display: flex;
-  
-}
-.clients-cards:last-child{
-  margin-right: 0px;
-}
+
 .clients-link-logo {
   display: flex;
     align-items: center;
@@ -399,12 +393,17 @@ font-size: 36px;
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
-    margin-right: 30px;
-    margin-bottom: 95px;
 }
 
-.clients-link-logo:hover {
+.clients-link-logo:hover,
+.clients-link-logo:focus{
 border-color: var(--accent-text-color);
+}
+.clients-link-logo:hover,
+.clients-logo:hover,
+.clients-link-logo:focus,
+.clients-logo:focus{
+  fill: var(--accent-text-color);
 }
 
 .clients-logo{
@@ -413,7 +412,8 @@ height: 60px;
 fill: var(--icon-color);
 }
 
-.clients-logo:hover{
+.clients-logo:hover,
+.clients-logo:focus{
  fill: var(--accent-text-color) ;
 }
 
@@ -453,6 +453,7 @@ fill: var(--icon-color);
 .footer-contact-list:last-child {
   margin-bottom: 0px;
 }
+.footer-contact-adress,
 .footer-contact {
   color: var(--text-color-logo-adres-btn);
   text-decoration: none;
@@ -464,18 +465,18 @@ fill: var(--icon-color);
 
 .footer-contact:hover,
 .footer-contact:focus {
-  color: var(--accent-text-color);
+  color: #8C8D92;
 }
 
 /*Социальные сети футер*/
 .footer-social-list{
   display: inline-block;
-    width: 206px;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-left: 70px;
+  width: 206px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 70px;
 }
 
 .footer-titel-link {
@@ -504,12 +505,12 @@ margin-right: 0px;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  background-color: #44454E;
-  padding: auto;
+  background-color: var(--footer-icon);
 }
 
 
-.footer-linc-icon:hover{
+.footer-linc-icon:hover,
+.footer-linc-icon:focus{
 background-color: var(--accent-text-color);
 }
 
@@ -557,13 +558,13 @@ fill: var(--text-color-logo-adres-btn);
 
 
 .list-portfolio > .portfolio-section {
-  width: calc((100-60px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-section:hover,
-.portfolio-section:focus {
+.portfolio-link:hover,
+.portfolio-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -580,8 +581,6 @@ fill: var(--text-color-logo-adres-btn);
   border-bottom: 1px solid var(--border-portfolio);
   padding: 20px 24px;
 }
-
-
 .portfolio-titel {
   margin-bottom: 4px;
   color: var(--titel-text-color);
