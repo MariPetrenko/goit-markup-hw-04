@@ -454,19 +454,26 @@ fill: var(--icon-color);
 .footer-contact-list:last-child {
   margin-bottom: 0px;
 }
-.footer-contact-adress,
-.footer-contact {
+.footer-contact-adress {
   color: var(--text-color-logo-adres-btn);
   text-decoration: none;
-  cursor: default;
+
   line-height: 1.71;
   font-style: normal;
   display: block;
 }
 
+.footer-contact{
+  text-decoration: none;
+    line-height: 1.71;
+    font-style: normal;
+    display: block;
+    color: var(--text-footer);
+}
+
 .footer-contact:hover,
 .footer-contact:focus {
-  color: #8C8D92;
+  color: var(--text-color-logo-adres-btn);
 }
 
 /*Социальные сети футер*/
@@ -550,6 +557,11 @@ fill: var(--text-color-logo-adres-btn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.activ-btn{
+  color: var(--text-color-logo-adres-btn);
+    background: var(--accent-text-color);
+}
+
 /* Галерея портфолио */
 .list-portfolio {
   display: flex;
@@ -599,7 +611,4 @@ fill: var(--text-color-logo-adres-btn);
   line-height: 1.87;
 }
 
-.portfolio-link {
-  text-decoration: none;
-}
 
