@@ -399,10 +399,11 @@ img {
 .clients-link-logo:focus{
 border-color: var(--accent-text-color);
 }
-.clients-link-logo:hover,
-.clients-logo:hover,
-.clients-link-logo:focus,
-.clients-logo:focus{
+
+.clients-link-logo:hover >
+.clients-logo,
+.clients-link-logo:focus >
+.clients-logo{
   fill: var(--accent-text-color);
 }
 
@@ -554,8 +555,6 @@ fill: var(--text-color-logo-adres-btn);
   display: flex;
   flex-wrap: wrap;
 }
-
-
 
 .list-portfolio > .portfolio-section {
   width: calc((100% - 60px) / 3);
